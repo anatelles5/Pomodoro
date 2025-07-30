@@ -87,3 +87,20 @@ var pomodoro = {
 window.onload = function(){
   pomodoro.init();
 };
+const infoBtn = document.getElementById('infoBtn');
+const popup = document.getElementById('popup');
+const closePopup = document.getElementById('closePopup');
+
+infoBtn.addEventListener('click', () => {
+  popup.classList.remove('hidden');
+});
+
+closePopup.addEventListener('click', () => {
+  popup.classList.add('hidden');
+});
+
+popup.addEventListener('click', (e) => {
+  if (e.target === popup) {
+    popup.classList.add('hidden');
+  }
+});
