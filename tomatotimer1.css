@@ -141,3 +141,16 @@ bottom:0;
   .hidden {
     display: none;
   }
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #076d4d; 
+  }
+  
+  .titulo img {
+    text-align: center;
+    padding: 10px 0;
+    width: 400px; 
+    height: auto;
+    display: inline-block;
+  }
